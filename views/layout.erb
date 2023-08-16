@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  </head>
+  <body>
+    <main style="text-align: center;">
+      <%= yield %>
+      <hr/>
+      <form method="GET" action="/">
+        <input type="text" name="event" id="event" placeholder="Enter Date" value="<%= params["event"] %>">
+        <input type="submit">
+      </form>
+    </main>
+  </body>
+</html>

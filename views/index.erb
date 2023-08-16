@@ -1,0 +1,10 @@
+<p>
+  <% if @days.present? %>
+    <%= @days.abs %>
+    <%= "day".pluralize(@days.abs) %>
+    <%= @days.positive? ? "until" : "since" %>
+    <%= @date %>.
+  <% else %>
+    Enter a date below.
+  <% end %>
+</p>
